@@ -1,0 +1,125 @@
+body {
+    overflow-x: hidden;
+    padding-top: 135px;
+  }
+  
+  #wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  #wrapper.toggled {
+    padding-right: 0px;
+  }
+  
+  #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 0;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #000;
+    opacity: 0.85;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+  }
+  
+  #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-left: 0px;
+  }
+  
+  
+  /* Sidebar Styles */
+  
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+  }
+  
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+  }
+  
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+  }
+  
+  
+  .sidebar-nav>.sidebar-brand {
+    font-size: 2em;
+    line-height: 60px;
+  }
+
+  .sideBarNavItem:hover{
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+.opaque{
+    opacity: 1;
+}
+
+  @media(min-width:768px) {
+    #wrapper {
+      padding-left: 0;
+    }
+    #wrapper.toggled {
+      padding-left: 0px;
+    }
+    #sidebar-wrapper {
+      width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+    }
+    #page-content-wrapper {
+      padding: 0px;
+      position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+      position: relative;
+      margin-right: 0;
+    }
+  }
+  @media(min-width:456px) {
+      body{
+          padding-top: 55px;
+      }
+  }
+
+  @media(min-width:319) {
+    body{
+        padding-top: 85px;
+    }
+}
+
+.autowide{
+    font-family: 'Audiowide', cursive;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
