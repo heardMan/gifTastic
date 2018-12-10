@@ -84,7 +84,8 @@ var app = {
             var element = app.create.newElement("li", "sidebar-item-"+id, "#sidebar-nav");
             //style element
             element.attr({
-                class: "text-light sideBarNavItem",  
+                class: "text-light sideBarNavItem", 
+                onClick: "app.logic.getNewGifs('" + name + "')", 
             });
             element.text(name);
         },
@@ -154,7 +155,10 @@ var app = {
             //
             var navbarItem = app.create.newElement("li", "navbarItem" + name, "#navbarUL");
             //
-            navbarItem.attr({class: "nav-item",});
+            navbarItem.attr({
+                class: "nav-item", 
+                
+            });
             //
             var navbarLink = app.create.newElement("a", "navbarLink" + name, "#navbarUL");
             //
@@ -420,7 +424,6 @@ var app = {
                 app.create.divider();
             }
         },
-        
         addATopic: function () {
             //e.preventDefault();
             $('#addTopicSubmitButton').on('click', function (e) {
