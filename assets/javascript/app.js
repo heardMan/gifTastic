@@ -68,7 +68,7 @@ var app = {
             //style element
             element.attr({
                 id: "sidebar-brand",
-                class: "sidebar-brand autowide text-light opaque",
+                class: "sidebar-brand autowide text-primary opaque",
             });
             element.text("gif - Tastic");
             //create element
@@ -313,7 +313,7 @@ var app = {
             //style input group submit
             $(addTopicButton).attr({
                 "id": "addTopicSubmitButton",
-                "class": "btn btn-outline-dark",
+                "class": "btn btn-outline-primary",
                 type: "submit",
             });
             addTopicButton.html("<i class='fas fa-plus'></i>");
