@@ -116,11 +116,11 @@ var app = {
         navbar: function (){
             var navbar = app.create.newElement("nav", "navbar", "#gifTastic");
             //convert app destination to app container by changing id and class
-            navbar.attr({class: "navbar navbar-light bg-light fixed-top",});
+            navbar.attr({class: "navbar navbar-dark bg-dark fixed-top",});
             //
             var navbarBrand = app.create.newElement("a", "navbarBrand", "#navbar");
             //
-            navbarBrand.attr({class: "navbar-brand mr-auto pl-3 autowide collapse",});
+            navbarBrand.attr({class: "navbar-brand mr-auto pl-3 autowide text-primary",});
             //
             navbarBrand.text("gif - Tastic");
             //

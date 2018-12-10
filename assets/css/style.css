@@ -105,16 +105,18 @@ body {
       margin-right: 0;
     }
   }
-  @media(min-width:456px) {
-      body{
-          padding-top: 55px;
-      }
-  }
+  
 
-  @media(min-width:319) {
+  @media(min-width:320px) {
     body{
-        padding-top: 85px;
+        padding-top: 96px;
     }
+}
+
+@media(min-width:457px) {
+  body{
+      padding-top: 55px;
+  }
 }
 
 .autowide{
